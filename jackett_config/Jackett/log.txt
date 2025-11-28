@@ -1,0 +1,881 @@
+2025-11-28 10:09:54.7474 Info Starting Jackett v0.24.364
+2025-11-28 10:09:55.7679 Info Environment version: 9.0.11 (/app/Jackett/)
+2025-11-28 10:09:55.7731 Info OS version: Unix 6.10.14.0 (64bit OS) (64bit process)
+2025-11-28 10:09:55.7761 Info Jackett variant: CoreLinuxMuslArm64
+2025-11-28 10:09:55.7772 Info File /etc/issue: Welcome to Alpine Linux 3.22
+2025-11-28 10:09:55.7782 Info Running in Docker: Yes (image build: v0.24.364-ls230)
+2025-11-28 10:09:55.7793 Info ThreadPool MaxThreads: 32767 workerThreads, 1000 completionPortThreads
+2025-11-28 10:09:55.7796 Info App config/log directory: /config/Jackett
+2025-11-28 10:09:55.7808 Info Using proxy: Disabled
+2025-11-28 10:09:55.7808 Info Using FlareSolverr: No
+2025-11-28 10:09:55.7838 Info Using HTTP Client: HttpWebClient2
+2025-11-28 10:09:55.7869 Info Loading Native indexers ...
+2025-11-28 10:09:55.8206 Info Loaded 74 Native indexers.
+2025-11-28 10:09:55.8229 Info Loading Cardigann indexers from: /config/cardigann/definitions/, /etc/xdg/cardigan/definitions/, /app/Jackett/Definitions
+2025-11-28 10:09:58.4629 Info Loaded 522 Cardigann indexers.
+2025-11-28 10:09:58.4645 Info Loaded 596 indexers in total
+2025-11-28 10:09:58.5288 Info Adding aggregate indexer ('all' indexer) ...
+2025-11-28 10:09:58.5577 Info Adding filter indexer ('type:public' indexer) ...
+2025-11-28 10:09:58.5591 Info Adding filter indexer ('type:private' indexer) ...
+2025-11-28 10:09:58.5591 Info Adding filter indexer ('type:semi-public' indexer) ...
+2025-11-28 10:09:59.0773 Warn No XML encryptor configured. Key {dbcbd966-a05f-49f8-951f-6b9efb9308d4} may be persisted to storage in unencrypted form.
+2025-11-28 10:09:59.2472 Info Jackett startup finished in 5.029 s
+2025-11-28 10:13:23.6608 Info Test search in Zelka.org => Found 20 releases [436ms]
+2025-11-28 10:14:41.5882 Info Test search in Zelka.org => Found 20 releases [467ms]
+2025-11-28 10:14:41.6587 Info Test search in ArenaBG => Found 25 releases [538ms]
+2025-11-28 10:18:37.6826 Info Manual search in  => Found 0 releases [8ms]
+2025-11-28 10:21:17.2588 Info Manual search in ArenaBG, Zelka.org for The Matrix 1999 => Found 31 releases [769ms]
+2025-11-28 10:24:30.5519 Info Manual search in ArenaBG, Zelka.org for The Matrix 1999 => Found 31 releases (from cache) [33ms]
+2025-11-28 10:26:56.7549 Info Manual search in ArenaBG, Zelka.org for The Matrix 1999 => Found 31 releases (from cache) [39ms]
+2025-11-28 10:26:57.1779 Error <html><head>
+<title>Zelka.ORG :: Логин</title>
+<link rel="stylesheet" href="css/default.css" type="text/css">
+<link rel="stylesheet" href="css/tooltip.css" type="text/css">
+<LINK rel="alternate" type="application/rss+xml" href="rss.xml">
+<LINK rel="alternate" type="application/rss+xml" href="rssdd.xml">
+<link href="//img.zamunda.se/pic/favicon.png" rel="icon" />
+<link href="//img2.zamunda.se/css/lightbox.css" rel="stylesheet" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="Zamunda.SE - Нещо повече от торент">
+<meta name="keywords" content="торент,сайт,тракер,битторент,филми,игри,снимки,музика,сървър,безплатно,torrent,site,tracker,seed,leech,music,movies,games,free,server">
+<script src="//img2.zamunda.se/js/sub.js"></script>
+<script src="//img2.zamunda.se/js/tool.js"></script>
+<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+<script type='text/javascript' src='js/votes.js'></script>
+<script>
+    
+    $(document).ready(function(){
+        
+        var overiFrame = -1;
+        $('.banner_ad').hover( function() {
+            overiFrame = $(this).attr('id');
+            //console.log(overiFrame);
+        }, function() {
+            overiFrame = -1;
+            //console.log(overiFrame);
+        });
+        
+        $(window).blur( function() {
+            if( overiFrame != -1 )
+                $.post("clc.php", {b: overiFrame});
+        });
+        
+    });
+    
+</script>
+
+</head>
+<body link=#000000 vlink=#000000>
+
+
+<script src="//img2.zamunda.se/js/wz_tooltip.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+
+function closeit(box)
+{
+document.getElementById(box).style.display="none";
+}
+
+function showit(box)
+{
+document.getElementById(box).style.display="block";
+}
+
+
+function SetSize(obj, size) {
+        if (obj.offsetWidth > size) {
+                obj.style.width = size;
+        };
+        if (obj.offsetHeight > size) {
+                obj.style.height = size;
+        };
+};
+
+function decision(message, url){
+
+if(confirm(message)) {
+location.href = url;
+}
+
+}
+
+</script>
+
+<table width=100% cellspacing=0 cellpadding=0 style='background: transparent;'>
+<tr>
+<td class=clear width=49%>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=1 frameborder=0 scrolling=no width=300 height=110 align=middle style='padding: 0px; background-color: fff;'></iframe>
+</td>
+<td class=logo>
+<div align=center>
+<a href=index.php><img src="//img.zamunda.se/pic/blank.gif" border=0></a>
+
+</div>
+</td>
+<td class=clear width=49% align=right>
+
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=2 frameborder=0 scrolling=no width=280 height=110 align=middle style='padding: 0px; background-color: #fff;'></iframe></td>
+</tr>
+
+
+</table>
+<style>
+td.upnav {
+border-bottom: 0px #000000 solid;
+padding-left: 8px;
+padding-right: 8px;
+}
+</style>
+
+<div align=left><a href=langchange.php?lang=en><img src=//img.zamunda.se/bitbucket/english-lang.gif width=22 border=0></a> <a href=langchange.php?lang=bg><img src=//img.zamunda.se/bitbucket/bulgarian-lang.gif width=22 border=0></a></div>
+<table class=bottom align=center cellspacing="0" cellpadding="5" border="0" style="margin-top: 10px;">
+<tr>
+<td class=upnav><a href=//chitanka.info/ target=_blank>Chitanka</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=zamunda-friends.php>Friends</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//picbg.net/ target=_blank><b>Gallery</b></a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=rules.php target=_top>Rules</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=faq.php target=_top>FAQ</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//pruc.org target=_blank>XXX</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=banners.php target=_top>Advertising</a></td>
+</tr>
+</table>
+<table class=mainouter width=100% border="1" cellspacing="0" cellpadding="5">
+
+<!------------- MENU ------------------------------------------------------------------------>
+
+
+
+<tr><td class=outer align=center>
+<table class=bottom width=950 cellspacing="0" cellpadding="5" border="0">
+<tr>
+<td align="center" class="navigation">
+	<a href="/" target=_top>
+		<img class="menupic" id="homepage" src="//img.zamunda.se/pic/homepage.gif" border=0><br>Home	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="browse.php" target="_top">
+		<img class="menupic" id="software" src="//img.zamunda.se/pic/software.gif" border=0><br>Torrents	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="login.php" target="_top">
+		<img src="//img.zamunda.se/pic/foruicon.gif" border=0><br>Login	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="signup.php" target="_top">
+		<img src="//img.zamunda.se/pic/regicon.gif" border=0><br>Registration	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="forums.php" target="_top">
+		<img class="menupic" id="statii" src="//img.zamunda.se/pic/statii.gif" border=0><br>Forums	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="catalogue.php" target="_top">
+		<img class="menupic" id="cat1" src="//img.zamunda.se/pic/cat1.gif" border=0><br>Catalogues	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="sendmessage.php?receiver=staff" target="_top">
+		<img class="menupic" id="atb_members" src="//img.zamunda.se/pic/atb_members.gif" border=0><br>Staff	</a>
+</td>
+</font>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td align=center class=outer style="padding-top: 10px; padding-bottom: 50px;"><table width=100% class=bottom>
+<tr valign=top><td class=clear width=80>
+
+<div align=left>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=5 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe>
+</td>
+<td class=clear width=5 align=center></td>
+<td align=center class=clear>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=7 frameborder=0 scrolling=no width=728 height=90 align=middle style="padding: 0px;"></iframe><br><br><body onLoad="document.login.username.focus();">
+<form method="post" name=login action="takelogin.php">
+<p>Note: You need cookies enabled to sign up or log in.</p>
+<table border="0" class=test cellpadding=5>
+<tr><td class=rowhead>Username:</td><td align=left><input type="text" size=20 name="username" /></td></tr>
+<tr><td class=rowhead>Password:</td><td align=left><input type="password" size=20 name="password" /></td></tr>
+<!--<tr><td class=rowhead>Излез:</td><td align=left><input type=checkbox name=logout value='yes' checked>Излез автоматично след 15 минути неактивност.</td></tr>-->
+<tr><td colspan="2" align="center"><input type="submit" value="Log in!" class=btn></td></tr>
+</table>
+</form>
+<p>Don't have an account? <a href=signup.php>Sign up</a> right now :) !</p>
+</td>
+        <td class=clear width=5 align=center></td>
+        <td width=80 align=right class=clear><iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=6 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe></td></td>
+		</tr>
+		<tr height=30px;>
+		</tr>
+		<tr>
+			<td align='center' style='border:none;' colspan=5>
+			</tr></table>
+</td></tr></table>
+<div align=center style='margin: 0 0 10px;'>
+							Support Zelka.ORG with Bitcoins. Our wallet address is  <a rel='lightbox[1]' href='//img2.zamunda.se/pic/chart.png'>3J9TbdKsnp9NFMa2KerEQcHgQYoyHYZgwp
+						</a>
+					</div><script type="text/javascript" src="//img2.zamunda.se/js/ieupdate.js"></script></body></html>
+
+2025-11-28 10:26:57.1828 Error <html><head>
+<title>Zelka.ORG :: Логин</title>
+<link rel="stylesheet" href="css/default.css" type="text/css">
+<link rel="stylesheet" href="css/tooltip.css" type="text/css">
+<LINK rel="alternate" type="application/rss+xml" href="rss.xml">
+<LINK rel="alternate" type="application/rss+xml" href="rssdd.xml">
+<link href="//img.zamunda.se/pic/favicon.png" rel="icon" />
+<link href="//img2.zamunda.se/css/lightbox.css" rel="stylesheet" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="Zamunda.SE - Нещо повече от торент">
+<meta name="keywords" content="торент,сайт,тракер,битторент,филми,игри,снимки,музика,сървър,безплатно,torrent,site,tracker,seed,leech,music,movies,games,free,server">
+<script src="//img2.zamunda.se/js/sub.js"></script>
+<script src="//img2.zamunda.se/js/tool.js"></script>
+<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+<script type='text/javascript' src='js/votes.js'></script>
+<script>
+    
+    $(document).ready(function(){
+        
+        var overiFrame = -1;
+        $('.banner_ad').hover( function() {
+            overiFrame = $(this).attr('id');
+            //console.log(overiFrame);
+        }, function() {
+            overiFrame = -1;
+            //console.log(overiFrame);
+        });
+        
+        $(window).blur( function() {
+            if( overiFrame != -1 )
+                $.post("clc.php", {b: overiFrame});
+        });
+        
+    });
+    
+</script>
+
+</head>
+<body link=#000000 vlink=#000000>
+
+
+<script src="//img2.zamunda.se/js/wz_tooltip.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+
+function closeit(box)
+{
+document.getElementById(box).style.display="none";
+}
+
+function showit(box)
+{
+document.getElementById(box).style.display="block";
+}
+
+
+function SetSize(obj, size) {
+        if (obj.offsetWidth > size) {
+                obj.style.width = size;
+        };
+        if (obj.offsetHeight > size) {
+                obj.style.height = size;
+        };
+};
+
+function decision(message, url){
+
+if(confirm(message)) {
+location.href = url;
+}
+
+}
+
+</script>
+
+<table width=100% cellspacing=0 cellpadding=0 style='background: transparent;'>
+<tr>
+<td class=clear width=49%>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=1 frameborder=0 scrolling=no width=300 height=110 align=middle style='padding: 0px; background-color: fff;'></iframe>
+</td>
+<td class=logo>
+<div align=center>
+<a href=index.php><img src="//img.zamunda.se/pic/blank.gif" border=0></a>
+
+</div>
+</td>
+<td class=clear width=49% align=right>
+
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=2 frameborder=0 scrolling=no width=280 height=110 align=middle style='padding: 0px; background-color: #fff;'></iframe></td>
+</tr>
+
+
+</table>
+<style>
+td.upnav {
+border-bottom: 0px #000000 solid;
+padding-left: 8px;
+padding-right: 8px;
+}
+</style>
+
+<div align=left><a href=langchange.php?lang=en><img src=//img.zamunda.se/bitbucket/english-lang.gif width=22 border=0></a> <a href=langchange.php?lang=bg><img src=//img.zamunda.se/bitbucket/bulgarian-lang.gif width=22 border=0></a></div>
+<table class=bottom align=center cellspacing="0" cellpadding="5" border="0" style="margin-top: 10px;">
+<tr>
+<td class=upnav><a href=//chitanka.info/ target=_blank>Chitanka</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=zamunda-friends.php>Friends</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//picbg.net/ target=_blank><b>Gallery</b></a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=rules.php target=_top>Rules</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=faq.php target=_top>FAQ</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//pruc.org target=_blank>XXX</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=banners.php target=_top>Advertising</a></td>
+</tr>
+</table>
+<table class=mainouter width=100% border="1" cellspacing="0" cellpadding="5">
+
+<!------------- MENU ------------------------------------------------------------------------>
+
+
+
+<tr><td class=outer align=center>
+<table class=bottom width=950 cellspacing="0" cellpadding="5" border="0">
+<tr>
+<td align="center" class="navigation">
+	<a href="/" target=_top>
+		<img class="menupic" id="homepage" src="//img.zamunda.se/pic/homepage.gif" border=0><br>Home	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="browse.php" target="_top">
+		<img class="menupic" id="software" src="//img.zamunda.se/pic/software.gif" border=0><br>Torrents	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="login.php" target="_top">
+		<img src="//img.zamunda.se/pic/foruicon.gif" border=0><br>Login	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="signup.php" target="_top">
+		<img src="//img.zamunda.se/pic/regicon.gif" border=0><br>Registration	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="forums.php" target="_top">
+		<img class="menupic" id="statii" src="//img.zamunda.se/pic/statii.gif" border=0><br>Forums	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="catalogue.php" target="_top">
+		<img class="menupic" id="cat1" src="//img.zamunda.se/pic/cat1.gif" border=0><br>Catalogues	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="sendmessage.php?receiver=staff" target="_top">
+		<img class="menupic" id="atb_members" src="//img.zamunda.se/pic/atb_members.gif" border=0><br>Staff	</a>
+</td>
+</font>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td align=center class=outer style="padding-top: 10px; padding-bottom: 50px;"><table width=100% class=bottom>
+<tr valign=top><td class=clear width=80>
+
+<div align=left>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=5 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe>
+</td>
+<td class=clear width=5 align=center></td>
+<td align=center class=clear>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=7 frameborder=0 scrolling=no width=728 height=90 align=middle style="padding: 0px;"></iframe><br><br><body onLoad="document.login.username.focus();">
+<form method="post" name=login action="takelogin.php">
+<p>Note: You need cookies enabled to sign up or log in.</p>
+<table border="0" class=test cellpadding=5>
+<tr><td class=rowhead>Username:</td><td align=left><input type="text" size=20 name="username" /></td></tr>
+<tr><td class=rowhead>Password:</td><td align=left><input type="password" size=20 name="password" /></td></tr>
+<!--<tr><td class=rowhead>Излез:</td><td align=left><input type=checkbox name=logout value='yes' checked>Излез автоматично след 15 минути неактивност.</td></tr>-->
+<tr><td colspan="2" align="center"><input type="submit" value="Log in!" class=btn></td></tr>
+</table>
+</form>
+<p>Don't have an account? <a href=signup.php>Sign up</a> right now :) !</p>
+</td>
+        <td class=clear width=5 align=center></td>
+        <td width=80 align=right class=clear><iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=6 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe></td></td>
+		</tr>
+		<tr height=30px;>
+		</tr>
+		<tr>
+			<td align='center' style='border:none;' colspan=5>
+			</tr></table>
+</td></tr></table>
+<div align=center style='margin: 0 0 10px;'>
+							Support Zelka.ORG with Bitcoins. Our wallet address is  <a rel='lightbox[1]' href='//img2.zamunda.se/pic/chart.png'>3J9TbdKsnp9NFMa2KerEQcHgQYoyHYZgwp
+						</a>
+					</div><script type="text/javascript" src="//img2.zamunda.se/js/ieupdate.js"></script></body></html>
+
+2025-11-28 10:26:57.2017 Error <html><head>
+<title>Zelka.ORG :: Логин</title>
+<link rel="stylesheet" href="css/default.css" type="text/css">
+<link rel="stylesheet" href="css/tooltip.css" type="text/css">
+<LINK rel="alternate" type="application/rss+xml" href="rss.xml">
+<LINK rel="alternate" type="application/rss+xml" href="rssdd.xml">
+<link href="//img.zamunda.se/pic/favicon.png" rel="icon" />
+<link href="//img2.zamunda.se/css/lightbox.css" rel="stylesheet" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="Zamunda.SE - Нещо повече от торент">
+<meta name="keywords" content="торент,сайт,тракер,битторент,филми,игри,снимки,музика,сървър,безплатно,torrent,site,tracker,seed,leech,music,movies,games,free,server">
+<script src="//img2.zamunda.se/js/sub.js"></script>
+<script src="//img2.zamunda.se/js/tool.js"></script>
+<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+<script type='text/javascript' src='js/votes.js'></script>
+<script>
+    
+    $(document).ready(function(){
+        
+        var overiFrame = -1;
+        $('.banner_ad').hover( function() {
+            overiFrame = $(this).attr('id');
+            //console.log(overiFrame);
+        }, function() {
+            overiFrame = -1;
+            //console.log(overiFrame);
+        });
+        
+        $(window).blur( function() {
+            if( overiFrame != -1 )
+                $.post("clc.php", {b: overiFrame});
+        });
+        
+    });
+    
+</script>
+
+</head>
+<body link=#000000 vlink=#000000>
+
+
+<script src="//img2.zamunda.se/js/wz_tooltip.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+
+function closeit(box)
+{
+document.getElementById(box).style.display="none";
+}
+
+function showit(box)
+{
+document.getElementById(box).style.display="block";
+}
+
+
+function SetSize(obj, size) {
+        if (obj.offsetWidth > size) {
+                obj.style.width = size;
+        };
+        if (obj.offsetHeight > size) {
+                obj.style.height = size;
+        };
+};
+
+function decision(message, url){
+
+if(confirm(message)) {
+location.href = url;
+}
+
+}
+
+</script>
+
+<table width=100% cellspacing=0 cellpadding=0 style='background: transparent;'>
+<tr>
+<td class=clear width=49%>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=1 frameborder=0 scrolling=no width=300 height=110 align=middle style='padding: 0px; background-color: fff;'></iframe>
+</td>
+<td class=logo>
+<div align=center>
+<a href=index.php><img src="//img.zamunda.se/pic/blank.gif" border=0></a>
+
+</div>
+</td>
+<td class=clear width=49% align=right>
+
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=2 frameborder=0 scrolling=no width=280 height=110 align=middle style='padding: 0px; background-color: #fff;'></iframe></td>
+</tr>
+
+
+</table>
+<style>
+td.upnav {
+border-bottom: 0px #000000 solid;
+padding-left: 8px;
+padding-right: 8px;
+}
+</style>
+
+<div align=left><a href=langchange.php?lang=en><img src=//img.zamunda.se/bitbucket/english-lang.gif width=22 border=0></a> <a href=langchange.php?lang=bg><img src=//img.zamunda.se/bitbucket/bulgarian-lang.gif width=22 border=0></a></div>
+<table class=bottom align=center cellspacing="0" cellpadding="5" border="0" style="margin-top: 10px;">
+<tr>
+<td class=upnav><a href=//chitanka.info/ target=_blank>Chitanka</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=zamunda-friends.php>Friends</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//picbg.net/ target=_blank><b>Gallery</b></a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=rules.php target=_top>Rules</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=faq.php target=_top>FAQ</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//pruc.org target=_blank>XXX</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=banners.php target=_top>Advertising</a></td>
+</tr>
+</table>
+<table class=mainouter width=100% border="1" cellspacing="0" cellpadding="5">
+
+<!------------- MENU ------------------------------------------------------------------------>
+
+
+
+<tr><td class=outer align=center>
+<table class=bottom width=950 cellspacing="0" cellpadding="5" border="0">
+<tr>
+<td align="center" class="navigation">
+	<a href="/" target=_top>
+		<img class="menupic" id="homepage" src="//img.zamunda.se/pic/homepage.gif" border=0><br>Home	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="browse.php" target="_top">
+		<img class="menupic" id="software" src="//img.zamunda.se/pic/software.gif" border=0><br>Torrents	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="login.php" target="_top">
+		<img src="//img.zamunda.se/pic/foruicon.gif" border=0><br>Login	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="signup.php" target="_top">
+		<img src="//img.zamunda.se/pic/regicon.gif" border=0><br>Registration	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="forums.php" target="_top">
+		<img class="menupic" id="statii" src="//img.zamunda.se/pic/statii.gif" border=0><br>Forums	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="catalogue.php" target="_top">
+		<img class="menupic" id="cat1" src="//img.zamunda.se/pic/cat1.gif" border=0><br>Catalogues	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="sendmessage.php?receiver=staff" target="_top">
+		<img class="menupic" id="atb_members" src="//img.zamunda.se/pic/atb_members.gif" border=0><br>Staff	</a>
+</td>
+</font>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td align=center class=outer style="padding-top: 10px; padding-bottom: 50px;"><table width=100% class=bottom>
+<tr valign=top><td class=clear width=80>
+
+<div align=left>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=5 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe>
+</td>
+<td class=clear width=5 align=center></td>
+<td align=center class=clear>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=7 frameborder=0 scrolling=no width=728 height=90 align=middle style="padding: 0px;"></iframe><br><br><body onLoad="document.login.username.focus();">
+<form method="post" name=login action="takelogin.php">
+<p>Note: You need cookies enabled to sign up or log in.</p>
+<table border="0" class=test cellpadding=5>
+<tr><td class=rowhead>Username:</td><td align=left><input type="text" size=20 name="username" /></td></tr>
+<tr><td class=rowhead>Password:</td><td align=left><input type="password" size=20 name="password" /></td></tr>
+<!--<tr><td class=rowhead>Излез:</td><td align=left><input type=checkbox name=logout value='yes' checked>Излез автоматично след 15 минути неактивност.</td></tr>-->
+<tr><td colspan="2" align="center"><input type="submit" value="Log in!" class=btn></td></tr>
+</table>
+</form>
+<p>Don't have an account? <a href=signup.php>Sign up</a> right now :) !</p>
+</td>
+        <td class=clear width=5 align=center></td>
+        <td width=80 align=right class=clear><iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=6 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe></td></td>
+		</tr>
+		<tr height=30px;>
+		</tr>
+		<tr>
+			<td align='center' style='border:none;' colspan=5>
+			</tr></table>
+</td></tr></table>
+<div align=center style='margin: 0 0 10px;'>
+							Support Zelka.ORG with Bitcoins. Our wallet address is  <a rel='lightbox[1]' href='//img2.zamunda.se/pic/chart.png'>3J9TbdKsnp9NFMa2KerEQcHgQYoyHYZgwp
+						</a>
+					</div><script type="text/javascript" src="//img2.zamunda.se/js/ieupdate.js"></script></body></html>
+
+2025-11-28 10:26:57.2032 Error <html><head>
+<title>Zelka.ORG :: Логин</title>
+<link rel="stylesheet" href="css/default.css" type="text/css">
+<link rel="stylesheet" href="css/tooltip.css" type="text/css">
+<LINK rel="alternate" type="application/rss+xml" href="rss.xml">
+<LINK rel="alternate" type="application/rss+xml" href="rssdd.xml">
+<link href="//img.zamunda.se/pic/favicon.png" rel="icon" />
+<link href="//img2.zamunda.se/css/lightbox.css" rel="stylesheet" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="Zamunda.SE - Нещо повече от торент">
+<meta name="keywords" content="торент,сайт,тракер,битторент,филми,игри,снимки,музика,сървър,безплатно,torrent,site,tracker,seed,leech,music,movies,games,free,server">
+<script src="//img2.zamunda.se/js/sub.js"></script>
+<script src="//img2.zamunda.se/js/tool.js"></script>
+<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+<script type='text/javascript' src='js/votes.js'></script>
+<script>
+    
+    $(document).ready(function(){
+        
+        var overiFrame = -1;
+        $('.banner_ad').hover( function() {
+            overiFrame = $(this).attr('id');
+            //console.log(overiFrame);
+        }, function() {
+            overiFrame = -1;
+            //console.log(overiFrame);
+        });
+        
+        $(window).blur( function() {
+            if( overiFrame != -1 )
+                $.post("clc.php", {b: overiFrame});
+        });
+        
+    });
+    
+</script>
+
+</head>
+<body link=#000000 vlink=#000000>
+
+
+<script src="//img2.zamunda.se/js/wz_tooltip.js"></script>
+<script language="JavaScript" type="text/JavaScript">
+
+function closeit(box)
+{
+document.getElementById(box).style.display="none";
+}
+
+function showit(box)
+{
+document.getElementById(box).style.display="block";
+}
+
+
+function SetSize(obj, size) {
+        if (obj.offsetWidth > size) {
+                obj.style.width = size;
+        };
+        if (obj.offsetHeight > size) {
+                obj.style.height = size;
+        };
+};
+
+function decision(message, url){
+
+if(confirm(message)) {
+location.href = url;
+}
+
+}
+
+</script>
+
+<table width=100% cellspacing=0 cellpadding=0 style='background: transparent;'>
+<tr>
+<td class=clear width=49%>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=1 frameborder=0 scrolling=no width=300 height=110 align=middle style='padding: 0px; background-color: fff;'></iframe>
+</td>
+<td class=logo>
+<div align=center>
+<a href=index.php><img src="//img.zamunda.se/pic/blank.gif" border=0></a>
+
+</div>
+</td>
+<td class=clear width=49% align=right>
+
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=2 frameborder=0 scrolling=no width=280 height=110 align=middle style='padding: 0px; background-color: #fff;'></iframe></td>
+</tr>
+
+
+</table>
+<style>
+td.upnav {
+border-bottom: 0px #000000 solid;
+padding-left: 8px;
+padding-right: 8px;
+}
+</style>
+
+<div align=left><a href=langchange.php?lang=en><img src=//img.zamunda.se/bitbucket/english-lang.gif width=22 border=0></a> <a href=langchange.php?lang=bg><img src=//img.zamunda.se/bitbucket/bulgarian-lang.gif width=22 border=0></a></div>
+<table class=bottom align=center cellspacing="0" cellpadding="5" border="0" style="margin-top: 10px;">
+<tr>
+<td class=upnav><a href=//chitanka.info/ target=_blank>Chitanka</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=zamunda-friends.php>Friends</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//picbg.net/ target=_blank><b>Gallery</b></a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=rules.php target=_top>Rules</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=faq.php target=_top>FAQ</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=//pruc.org target=_blank>XXX</a></td>
+<td class=bottom width=1></td>
+<td class=upnav><a href=banners.php target=_top>Advertising</a></td>
+</tr>
+</table>
+<table class=mainouter width=100% border="1" cellspacing="0" cellpadding="5">
+
+<!------------- MENU ------------------------------------------------------------------------>
+
+
+
+<tr><td class=outer align=center>
+<table class=bottom width=950 cellspacing="0" cellpadding="5" border="0">
+<tr>
+<td align="center" class="navigation">
+	<a href="/" target=_top>
+		<img class="menupic" id="homepage" src="//img.zamunda.se/pic/homepage.gif" border=0><br>Home	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="browse.php" target="_top">
+		<img class="menupic" id="software" src="//img.zamunda.se/pic/software.gif" border=0><br>Torrents	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="login.php" target="_top">
+		<img src="//img.zamunda.se/pic/foruicon.gif" border=0><br>Login	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="signup.php" target="_top">
+		<img src="//img.zamunda.se/pic/regicon.gif" border=0><br>Registration	</a>
+</td>
+
+
+
+<td align="center" class="navigation">
+	<a href="forums.php" target="_top">
+		<img class="menupic" id="statii" src="//img.zamunda.se/pic/statii.gif" border=0><br>Forums	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="catalogue.php" target="_top">
+		<img class="menupic" id="cat1" src="//img.zamunda.se/pic/cat1.gif" border=0><br>Catalogues	</a>
+</td>
+
+<td align="center" class="navigation">
+	<a href="sendmessage.php?receiver=staff" target="_top">
+		<img class="menupic" id="atb_members" src="//img.zamunda.se/pic/atb_members.gif" border=0><br>Staff	</a>
+</td>
+</font>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td align=center class=outer style="padding-top: 10px; padding-bottom: 50px;"><table width=100% class=bottom>
+<tr valign=top><td class=clear width=80>
+
+<div align=left>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=5 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe>
+</td>
+<td class=clear width=5 align=center></td>
+<td align=center class=clear>
+<iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=7 frameborder=0 scrolling=no width=728 height=90 align=middle style="padding: 0px;"></iframe><br><br><body onLoad="document.login.username.focus();">
+<form method="post" name=login action="takelogin.php">
+<p>Note: You need cookies enabled to sign up or log in.</p>
+<table border="0" class=test cellpadding=5>
+<tr><td class=rowhead>Username:</td><td align=left><input type="text" size=20 name="username" /></td></tr>
+<tr><td class=rowhead>Password:</td><td align=left><input type="password" size=20 name="password" /></td></tr>
+<!--<tr><td class=rowhead>Излез:</td><td align=left><input type=checkbox name=logout value='yes' checked>Излез автоматично след 15 минути неактивност.</td></tr>-->
+<tr><td colspan="2" align="center"><input type="submit" value="Log in!" class=btn></td></tr>
+</table>
+</form>
+<p>Don't have an account? <a href=signup.php>Sign up</a> right now :) !</p>
+</td>
+        <td class=clear width=5 align=center></td>
+        <td width=80 align=right class=clear><iframe class='banner_ad' id=(removed) src=//ads.zamunda.se/opx/view.php?p=6 frameborder=0 scrolling=no width=160 height=600 align=middle style="padding: 0px;"></iframe></td></td>
+		</tr>
+		<tr height=30px;>
+		</tr>
+		<tr>
+			<td align='center' style='border:none;' colspan=5>
+			</tr></table>
+</td></tr></table>
+<div align=center style='margin: 0 0 10px;'>
+							Support Zelka.ORG with Bitcoins. Our wallet address is  <a rel='lightbox[1]' href='//img2.zamunda.se/pic/chart.png'>3J9TbdKsnp9NFMa2KerEQcHgQYoyHYZgwp
+						</a>
+					</div><script type="text/javascript" src="//img2.zamunda.se/js/ieupdate.js"></script></body></html>
+
+2025-11-28 10:26:57.2259 Error Error downloading. indexer: zelkaorg path: https://zelka.org/download.php/222136/Matrix retail DVD5.PAL-K 79.torrent
+System.Exception: BencodeParser failed
+ ---> BencodeNET.Exceptions.InvalidBencodeException`1[BencodeNET.Objects.IBObject]: Failed to parse IBObject. Invalid beginning character of object. Found '<' at position 0. Valid characters are: 0-9, 'i', 'l' and 'd'
+   at BencodeNET.Parsing.BencodeParser.Parse(BencodeReader reader)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Stream stream)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Byte[] bytes)
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 78
+   --- End of inner exception stack trace ---
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 85
+2025-11-28 10:26:57.2259 Error Error downloading. indexer: zelkaorg path: https://zelka.org/download.php/221485/The matrix.retail DVD9.PAL-K 79.torrent
+System.Exception: BencodeParser failed
+ ---> BencodeNET.Exceptions.InvalidBencodeException`1[BencodeNET.Objects.IBObject]: Failed to parse IBObject. Invalid beginning character of object. Found '<' at position 0. Valid characters are: 0-9, 'i', 'l' and 'd'
+   at BencodeNET.Parsing.BencodeParser.Parse(BencodeReader reader)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Stream stream)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Byte[] bytes)
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 78
+   --- End of inner exception stack trace ---
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 85
+2025-11-28 10:26:57.2259 Error Error downloading. indexer: zelkaorg path: https://zelka.org/download.php/220805/%5BNokia 5800%5D The Matrix Trilogy.torrent
+System.Exception: BencodeParser failed
+ ---> BencodeNET.Exceptions.InvalidBencodeException`1[BencodeNET.Objects.IBObject]: Failed to parse IBObject. Invalid beginning character of object. Found '<' at position 0. Valid characters are: 0-9, 'i', 'l' and 'd'
+   at BencodeNET.Parsing.BencodeParser.Parse(BencodeReader reader)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Stream stream)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Byte[] bytes)
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 78
+   --- End of inner exception stack trace ---
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 85
+2025-11-28 10:26:57.2260 Error Error downloading. indexer: zelkaorg path: https://zelka.org/download.php/217011/The.Matrix.Trilogy.720p.BDRip.AC3.XviD-SHiRK.torrent
+System.Exception: BencodeParser failed
+ ---> BencodeNET.Exceptions.InvalidBencodeException`1[BencodeNET.Objects.IBObject]: Failed to parse IBObject. Invalid beginning character of object. Found '<' at position 0. Valid characters are: 0-9, 'i', 'l' and 'd'
+   at BencodeNET.Parsing.BencodeParser.Parse(BencodeReader reader)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Stream stream)
+   at BencodeNET.Parsing.BencodeParserExtensions.Parse(IBencodeParser parser, Byte[] bytes)
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 78
+   --- End of inner exception stack trace ---
+   at Jackett.Server.Controllers.DownloadController.DownloadAsync(String indexerId, String path, String jackett_apikey, String file) in ./Jackett.Server/Controllers/DownloadController.cs:line 85

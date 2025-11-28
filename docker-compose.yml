@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  addon:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - JACKETT_URL=http://jackett:9117
+      - JACKETT_API_KEY=${JACKETT_API_KEY}
+      - REALDEBRID_API_KEY=${REALDEBRID_API_KEY}
+      - TORBOX_API_KEY=${TORBOX_API_KEY}
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - jackett
+      - redis
+
+  jackett:
+    image: lscr.io/linuxserver/jackett:latest
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Sofia
+    volumes:
+      - ./jackett_config:/config
+    ports:
+      - "9117:9117"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "sitelink",
+    "type": "inputstring",
+    "name": "Site Link",
+    "value": "https://arenabg.com/"
+  },
+  {
+    "id": "cookieheader",
+    "type": "hiddendata",
+    "name": "CookieHeader",
+    "value": "PHPSESSID=7ffd7gq1vcmmek6tnsmmi214di; uid=4558361; pass=cd1d690850b09304471cd74f7cdf5f16"
+  },
+  {
+    "id": "lasterror",
+    "type": "hiddendata",
+    "name": "LastError",
+    "value": null
+  },
+  {
+    "id": "username",
+    "type": "inputstring",
+    "name": "Username",
+    "value": "kivanov8907"
+  },
+  {
+    "id": "password",
+    "type": "inputstring",
+    "name": "Password",
+    "value": "CfDJ8GbZy9tfoPhJlR9rnvuTCNSIKgVSB9TVPVfUnLw80o1JWvFK6RIk0Oo_NeNWkXGblgzhCf0K7Sn90Q3SB2IH0K9R62Pk3Se3xkiXh0TkgrZbMMR3azzJH6tynnlply-4YLG8ysOKu-cR1QTaTUo190Q"
+  },
+  {
+    "id": "downloadlink",
+    "type": "inputselect",
+    "name": "Download link",
+    "value": "magnet:?xt=",
+    "options": {
+      "/en/torrents/download/?key=": ".torrent",
+      "magnet:?xt=": "magnet"
+    }
+  },
+  {
+    "id": "downloadlink(fallback)",
+    "type": "inputselect",
+    "name": "Download link (fallback)",
+    "value": "/en/torrents/download/?key=",
+    "options": {
+      "/en/torrents/download/?key=": ".torrent",
+      "magnet:?xt=": "magnet"
+    }
+  },
+  {
+    "id": "tags",
+    "type": "inputtags",
+    "name": "Tags",
+    "value": ""
+  }
+]

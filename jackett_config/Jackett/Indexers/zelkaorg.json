@@ -1,0 +1,66 @@
+[
+  {
+    "id": "sitelink",
+    "type": "inputstring",
+    "name": "Site Link",
+    "value": "https://zelka.org/"
+  },
+  {
+    "id": "cookieheader",
+    "type": "hiddendata",
+    "name": "CookieHeader",
+    "value": "uid=3129712; pass=709da989f6cdf205a0bd0cde923ef217"
+  },
+  {
+    "id": "lasterror",
+    "type": "hiddendata",
+    "name": "LastError",
+    "value": null
+  },
+  {
+    "id": "username",
+    "type": "inputstring",
+    "name": "Username",
+    "value": "kaloyan8907"
+  },
+  {
+    "id": "password",
+    "type": "inputstring",
+    "name": "Password",
+    "value": "CfDJ8GbZy9tfoPhJlR9rnvuTCNTHbupXfaACwwStGw2pjnJRjT_DkAGhdxcIuP5O1pIbj0nBzcE8EhEQcjvP82RZBqxCtCz8qRhqZA1iTgZH1s0-uZ3MDGxUDJGXLI2pvDceaQ"
+  },
+  {
+    "id": "filterfreeleechonly",
+    "type": "inputbool",
+    "name": "Filter freeleech only",
+    "value": false
+  },
+  {
+    "id": "sortrequestedfromsite",
+    "type": "inputselect",
+    "name": "Sort requested from site",
+    "value": "6",
+    "options": {
+      "6": "created",
+      "9": "seeders",
+      "7": "size",
+      "2": "title"
+    }
+  },
+  {
+    "id": "orderrequestedfromsite",
+    "type": "inputselect",
+    "name": "Order requested from site",
+    "value": "desc",
+    "options": {
+      "desc": "desc",
+      "asc": "asc"
+    }
+  },
+  {
+    "id": "tags",
+    "type": "inputtags",
+    "name": "Tags",
+    "value": ""
+  }
+]
