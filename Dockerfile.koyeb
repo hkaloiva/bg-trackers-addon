@@ -1,0 +1,37 @@
+FROM python:3.11-slim
+
+# Install dependencies for Jackett and Python packages
+RUN apt-get update && apt-get install -y \
+    wget \
+    curl \
+    libicu-dev \
+    libssl-dev \
+    supervisor \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Jackett
+WORKDIR /opt
+RUN wget -q https://github.com/Jackett/Jackett/releases/latest/download/Jackett.Binaries.LinuxAMDx64.tar.gz \
+    && tar -xzf Jackett.Binaries.LinuxAMDx64.tar.gz \
+    && rm Jackett.Binaries.LinuxAMDx64.tar.gz
+
+# Setup Addon
+WORKDIR /app
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy Application Code
+COPY . .
+
+# Copy Jackett Config (Pre-configured indexers)
+# We copy it to /config which Jackett uses
+COPY jackett_config/Jackett /config/Jackett
+
+# Copy Supervisor Config
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Expose ports (8080 for Addon, 9117 for Jackett)
+EXPOSE 8080 9117
+
+# Start Supervisor
+CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
